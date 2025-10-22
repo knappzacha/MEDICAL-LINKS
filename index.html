@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Choose a Calendly Link</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#4f46e5;--text:#e6eef8}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#071022 0%, #061826 100%);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      border-radius:12px;
+      padding:28px;
+      max-width:520px;
+      width:100%;
+      text-align:center;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+    }
+    h1{margin:0 0 12px;font-size:20px}
+    p{margin:0 0 20px;color:rgba(230,238,248,0.85)}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    a.btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      color:white;
+      background:linear-gradient(90deg,var(--accent),#7c3aed);
+      box-shadow:0 6px 18px rgba(79,70,229,0.18);
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+    a.btn.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(255,255,255,0.06);
+      box-shadow:none;
+      font-weight:600;
+    }
+    a.btn:active{transform:translateY(1px)}
+    footer{margin-top:18px;font-size:13px;color:rgba(230,238,248,0.6)}
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <h1>Schedule a session with Zach</h1>
+    <p>Pick the meeting type you want — each button opens the Calendly page in a new tab.</p>
+
+    <div class="buttons">
+      <a class="btn" href="https://calendly.com/knappzacha/behavioral-health" target="_blank" rel="noopener noreferrer">
+        Behavioral Health (Calendly)
+      </a>
+
+      <a class="btn secondary" href="https://calendly.com/knappzacha/physical-therapy" target="_blank" rel="noopener noreferrer">
+        Physical Therapy (Calendly)
+      </a>
+    </div>
+
+    <footer>If your browser blocks popups when opening a single-click redirect, try right-click → Open in new tab.</footer>
+  </div>
+</body>
+</html>
