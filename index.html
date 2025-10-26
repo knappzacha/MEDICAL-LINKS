@@ -69,13 +69,40 @@
 </div>
 
 <style>
-/* make each label stack and keep link styling */
+.btn.secondary {
+  display: inline-block;       /* keep it button-like; use block if you want full-width */
+  padding: 10px 14px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  max-width: 260px;           /* control wrapping width */
+  box-sizing: border-box;
+}
+
+/* stack labels */
 .btn.secondary .title,
 .btn.secondary .subtitle {
   display: block;
 }
-.btn.secondary { text-decoration: none; color: inherit; }
-/* optional: wrap long words/URLs */
+
+/* divider line between title and subtitle */
+.btn.secondary .title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e6e6e6; /* the line — change color/thickness here */
+  font-weight: 600;
+}
+
+/* spacing and style for subtitle */
+.btn.secondary .subtitle {
+  margin-top: 8px;
+  color: #0366d6;
+  font-size: 0.95em;
+  line-height: 1.1;
+}
+
+/* ensure long words wrap instead of overflowing */
 .btn.secondary { overflow-wrap: anywhere; word-break: break-word; white-space: normal; }
 </style>
 
