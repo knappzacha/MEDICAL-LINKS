@@ -62,48 +62,64 @@
         Behavioral Health
       </a>
 
-      <a class="btn secondary" href="https://visibook.com/2cv7nowfghresujfg?back=applanding&fromIntro=true" target="_blank" rel="noopener noreferrer">
+      <a class="btn secondary"
+     href="https://visibook.com/2cv7nowfghresujfg?back=applanding&fromIntro=true"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Physical Therapy — Nutrition">
     <span class="title">Physical Therapy</span>
     <span class="subtitle">Nutrition</span>
   </a>
 </div>
 
 <style>
+/* Purple button for a normal web page (works on GitHub Pages / your site) */
 .btn.secondary {
-  display: inline-block;       /* keep it button-like; use block if you want full-width */
-  padding: 10px 14px;
+  display: inline-block;           /* keep it button-like */
+  padding: 12px 16px;
   text-decoration: none;
-  color: inherit;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 6px;
-  max-width: 260px;           /* control wrapping width */
+  color: #ffffff;                  /* both lines same color */
+  background: #6f42c1;             /* GitHub purple-like color */
+  border-radius: 8px;
+  max-width: 300px;
   box-sizing: border-box;
+  text-align: center;
+  transition: background .12s ease;
 }
 
 /* stack labels */
 .btn.secondary .title,
 .btn.secondary .subtitle {
   display: block;
+  color: inherit;                  /* ensures same color for both lines */
 }
 
-/* divider line between title and subtitle */
+/* divider line between title and subtitle (subtle, lighter than background) */
 .btn.secondary .title {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #e6e6e6; /* the line — change color/thickness here */
   font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-/* spacing and style for subtitle */
+/* subtitle style */
 .btn.secondary .subtitle {
   margin-top: 8px;
-  color: #0366d6;
   font-size: 0.95em;
   line-height: 1.1;
+  opacity: 0.98;
 }
 
-/* ensure long words wrap instead of overflowing */
-.btn.secondary { overflow-wrap: anywhere; word-break: break-word; white-space: normal; }
+/* hover tweak */
+.btn.secondary:hover {
+  background: #5b35a8;
+}
+
+/* wrap long words instead of overflowing */
+.btn.secondary {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
 </style>
 
     <footer>If your browser blocks popups when opening a single-click redirect, try right-click → Open in new tab.</footer>
